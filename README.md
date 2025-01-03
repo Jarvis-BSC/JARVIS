@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./image/banner.png" alt="JARVIS Banner" width="100%"/>
+  <img src="./image/jarvis-banner.png" alt="JARVIS Banner" width="100%"/>
 </p>
 
 <h1 align="center">JARVIS: Your Human-Level AI Assistant</h1>
