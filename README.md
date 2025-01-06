@@ -5,7 +5,7 @@
 <h1 align="center">JARVIS: Your Human-Level AI Assistant</h1>
 
 <p align="center">
-  <img alt="arXiv" src="https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg">
+  
   <a href="https://huggingface.co/spaces/JarvisOnSolana/Jarvis/tree/main"><img alt="Open in Spaces" src="https://img.shields.io/badge/%F0%9F%A4%97-Open%20in%20Spaces-blue"></a>
 </p>
 
