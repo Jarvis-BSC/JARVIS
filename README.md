@@ -21,16 +21,10 @@ The mission of JARVIS is to explore artificial general intelligence (AGI) and de
 
 ## What's New
 
-+  [2024.01.15] We release Easytool for easier tool usage.
++  [2025.01.06] We release Easytool for easier tool usage.
    + The code and datasets are available at [EasyTool](/easytool).
    + The paper is available at [EasyTool: Enhancing LLM-based Agents with Concise Tool Instruction](https://arxiv.org/abs/2401.06201).
-+  [2023.11.30] We release TaskBench for evaluating task automation capability of LLMs.
-   + The code and datasets are available at [TaskBench](/taskbench).
-   + The paper is available at [TaskBench: Benchmarking Large Language Models for Task Automation](https://arxiv.org/abs/2311.18760).
-+  [2023.07.28] We are now in the process of planning evaluation and project rebuilding. We will release a new version of Jarvis in the near future.
-+  [2023.07.24] We released a light langchain version of Jarvis. See <a href="https://github.com/langchain-ai/langchain/tree/master/libs/experimental/langchain_experimental/autonomous_agents/hugginggpt">here</a>.
-+  [2023.04.16] Jarvis now supports the OpenAI service on the Azure platform and the GPT-4 model.
-+  [2023.04.06] We added the Gradio demo and built the web API for `/tasks` and `/results` in `server` mode.
+
 
 ##  Key Features
 
