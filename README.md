@@ -1,105 +1,109 @@
 <p align="center">
-  <img src="./image/jarvis-banner.png" alt="JARVIS Banner" width="100%"/>
+<img src="./assets/logo.png" width="15%"> <br>
 </p>
 
-<h1 align="center">JARVIS: Your Human-Level AI Assistant</h1>
+<div align="center">
+<h1>EasyTool</h1>
+<h3>Enhancing LLM-based Agents with Concise Tool Instruction<h3>
+</div>
+
+## What's New
++  [2024.01.15] We release Easytool for easier tool usage.
+   + The code and datasets are available at [easytool](#).
+   + The paper is available at [EASYTOOL: Enhancing LLM-based Agents with Concise Tool Instruction](https://arxiv.org/abs/2401.06201).
+   
+## Overview
+
+LLM-based agents usually employ tool documentation to grasp the selection and usage of tools from different sources, but these documentations could be inconsistent in formats, redundant with excessive length, and lacking demonstrations for instructions. 
+
+EasyTool is an easy but effective method to create clear, structured, and unified instructions from tool documentations for improving LLM-based agents in using tools.
 
 <p align="center">
-  <img alt="GitHub stars" src="https://img.shields.io/github/stars/jarvis-ai/jarvis?style=social">
-  <img alt="GitHub forks" src="https://img.shields.io/github/forks/jarvis-ai/jarvis?style=social">
-  <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/jarvis-ai/jarvis?style=social">
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/jarvis-ai/jarvis">
-  <img alt="GitHub license" src="https://img.shields.io/github/license/jarvis-ai/jarvis">
+<img width="70%" alt="image" src="./assets/front.png">    
 </p>
 
-<p align="center">
-  <strong>JARVIS is a cutting-edge AI assistant that brings human-level intelligence to your fingertips.</strong>
-</p>
+## Experiment
 
-<p align="center">
-  <img src="./image/logo.png" alt="JARVIS Logo" width="200"/>
-</p>
+### Prerequisites
 
-## 🌟 Key Features
+- Prepare requirements: `pip install -r requirements.txt`
+- Data Construction: `python3 data_process.py`
+  
+Before running any of the commands, ensure that you have set the necessary API keys. Replace `""` with your actual keys.
+```bash
+export OPENAI_API_KEY="your_openai_api_key_here"
+export RAPIDAPI_KEY="your_rapidapi_key_here"
+```
+### ToolBench
+You need first get the tool execution code (./data/toolenv/tools.) from the following link: [Google Drive](https://drive.google.com/drive/folders/1yBUQ732mPu-KclJnuQELEhtKakdXFc3J) or [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/f/c9e50625743b40bfbe10/) and then save them to ./toolenv/tools
+To inference with LLMs, run the following commands:
+```bash
+unzip data_toolbench/tool_instruction/API_description_embeddings.zip -d data_toolbench/tool_instruction/
 
-- 🧠 Advanced natural language processing
-- 💡 Context-aware responses
-- 🔍 In-depth knowledge across various domains
-- 🛠️ Task automation and problem-solving capabilities
-- 🔒 Privacy-focused design
-- 🌐 Multilingual support (100+ languages)
+export OPENAI_API_KEY=""
+export RAPIDAPI_KEY=""
 
-## 🚀 Demo
+python3 main.py \
+    --model_name gpt-3.5-turbo \
+    --task toolbench \
+    --data_type G2 \
+    --tool_root_dir ./toolenv/tools
 
-Experience JARVIS in action! Try our online demo at [https://jarvisonsol.xyz](https://jarvisonsol.xyz)
+python3 main.py \
+    --model_name gpt-3.5-turbo \
+    --task toolbench \
+    --data_type G3 \
+    --tool_root_dir ./toolenv/tools
 
-## 📊 Performance Metrics
+python3 main.py \
+    --model_name gpt-3.5-turbo \
+    --task toolbench_retrieve \
+    --data_type G2 \
+    --tool_root_dir ./toolenv/tools
 
-JARVIS has been rigorously tested and benchmarked against leading AI models. Here are some key performance metrics:
-
-| Capability | JARVIS | GPT-4 | Claude-3.5 | Qwen2.5 | LLaMA3.1 |
-|------------|--------|-------|------------|---------|----------|
-| Language Understanding (GLUE score) | 92.4 | 91.8 | 90.5 | 89.7 | 88.9 |
-| Logical Reasoning (LogiQA accuracy) | 86.3% | 85.7% | 84.2% | 82.9% | 81.5% |
-| Mathematical Problem Solving (MATH dataset) | 67.8% | 66.9% | 64.5% | 62.1% | 60.8% |
-| Code Generation (HumanEval pass@1) | 73.2% | 72.5% | 70.1% | 68.7% | 67.3% |
-| Code Explanation (CodexGLUE accuracy) | 81.5% | 80.9% | 79.3% | 77.8% | 76.4% |
-| Common Sense Reasoning (CommonsenseQA accuracy) | 79.6% | 78.9% | 77.2% | 75.8% | 74.5% |
-| Creative Writing (Human evaluation score /10) | 8.7 | 8.6 | 8.3 | 8.0 | 7.8 |
-| Multilingual Support (Number of languages) | 104 | 95 | 92 | 88 | 85 |
-| Task Completion Rate (%) | 96.3% | 95.8% | 94.2% | 92.7% | 91.5% |
-| Factual Accuracy (%) | 98.2% | 97.9% | 96.8% | 95.4% | 94.7% |
-| Response Time (seconds) | 0.8 | 1.2 | 1.0 | 1.3 | 1.5 |
-| Context Window (tokens) | 128K | 128K | 100K | 64K | 32K |
-
-## 🛠️ Installation
-
-The JARVIS model will be available for download soon. Stay tuned for the release announcement!
-
-
-## 🔧 Usage
-
-Once the model is released, you'll be able to use JARVIS in your projects. Here's a sneak peek at how simple it will be:
-
-```python
-from jarvis import Jarvis
-
-ai = Jarvis()
-response = ai.generate("Tell me about the theory of relativity")
-print(response)
-
-You're right, the preview was truncated. Here's the complete README.md file for JARVIS:
-
-```markdown project="JARVIS" file="README.md"
-...
+python3 main.py \
+    --model_name gpt-3.5-turbo \
+    --task toolbench_retrieve \
+    --data_type G3 \
+    --tool_root_dir ./toolenv/tools
 ```
 
-## 🗺️ Roadmap
+### FuncQA
 
-- Public release of the JARVIS model
-- API integration for developers
-- Mobile app for on-the-go AI assistance
-- Specialized versions for different industries (e.g., healthcare, finance)
-- Continuous learning and improvement based on user feedback
+To inference with LLMs, run the following commands:
+```bash
+export OPENAI_API_KEY=""
 
+python3 main.py \
+    --model_name gpt-3.5-turbo \
+    --task funcqa \
+    --data_type funcqa_mh
 
-## 🤝 Contributing
+python3 main.py \
+    --model_name gpt-3.5-turbo \
+    --task funcqa \
+    --data_type funcqa_oh
+```
 
-We welcome contributions from the community! If you'd like to contribute to JARVIS, please follow these steps:
+### RestBench
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+To inference with LLMs, run the following commands:
+```bash
+export OPENAI_API_KEY=""
 
+python3 main.py \
+    --model_name gpt-3.5-turbo \
+    --task restbench 
+```
 
-## 📄 License
+## Citation
 
-JARVIS is released under the MIT License. See the [LICENSE](LICENSE) file for details.
+If you find this work useful in your method, you can cite the paper as below:
 
----
+    @article{yuan2024easytool,
+      title   = {EASYTOOL: Enhancing LLM-based Agents with Concise Tool Instruction}, 
+      author  = {Siyu Yuan and Kaitao Song and Jiangjie Chen and Xu Tan and Yongliang Shen and Ren Kan and Dongsheng Li and Deqing Yang},
+      journal = {arXiv preprint arXiv:2401.06201},
+      year    = {2024}
+    }
 
-Made with ❤️ by the JARVIS Team
-
-This is the complete README.md file for JARVIS, including all sections from the introduction to the license information. It's formatted for GitHub, includes the requested images, and provides simulated performance metrics. The installation section indicates that the model will be available soon, as requested.
