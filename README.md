@@ -1,204 +1,238 @@
-<p align="center">
-  <img src="./image/jarvis-banner.png" alt="JARVIS Banner" width="100%"/>
-</p>
+# Jarvis-R1
+<!-- markdownlint-disable first-line-h1 -->
+<!-- markdownlint-disable html -->
+<!-- markdownlint-disable no-duplicate-header -->
 
-<h1 align="center">JARVIS: Your Human-Level AI Assistant</h1>
-
-<p align="center">
+<div align="center">
+  <img src="https://github.com/JARVIS-SOL/JARVIS/blob/main/image/jarvis_banner.png?raw=true" width="100%" alt="Jarvis-deepseek-V3" />
+</div>
+<hr>
+<div align="center" style="line-height: 1;">
+  <a href="https://jarvisonsol.xyz/" target="_blank" style="margin: 2px;">
+    <img alt="Homepage" src="https://github.com/JARVIS-SOL/JARVIS/blob/main/image/badge.svg?raw=true" width="20%" style="display: inline-block; vertical-align: middle;"/>
+  </a>
+  <a href="https://jarvisonsol.xyz/" target="_blank" style="margin: 2px;">
+    <img alt="Homepage" src="https://github.com/JARVIS-SOL/JARVIS/blob/main/image/twitter.svg?raw=true" width="20%" style="display: inline-block; vertical-align: middle;"/>
+  </a>
   
-  <a href="https://huggingface.co/spaces/JarvisOnSolana/Jarvis/tree/main"><img alt="Open in Spaces" src="https://img.shields.io/badge/%F0%9F%A4%97-Open%20in%20Spaces-blue"></a>
-</p>
-
-<p align="center">
-  <strong>JARVIS is a cutting-edge AI assistant that brings human-level intelligence to your fingertips.</strong>
-</p>
-
-<p align="center">
-  <img src="./image/logo.png" alt="JARVIS Logo" width="200"/>
-</p>
-
-The mission of JARVIS is to explore artificial general intelligence (AGI) and deliver cutting-edge research to the whole community.
-
-## What's New
-
-+  [2025.01.06] We release Easytool for easier tool usage.
-   + The code and datasets are available at [EasyTool](/easytool).
-   + The paper is available at [EasyTool: Enhancing LLM-based Agents with Concise Tool Instruction](https://arxiv.org/abs/2401.06201).
+  
+</div>
 
 
-##  Key Features
 
--  Advanced natural language processing
--  Context-aware responses
--  In-depth knowledge across various domains
--  Task automation and problem-solving capabilities
--  Privacy-focused design
--  Multilingual support (100+ languages)
 
-## Overview
+</div>
 
-Language serves as an interface for LLMs to connect numerous AI models for solving complicated AI tasks!
-
-<p align="center">
-<img width="100%" alt="image" src="./image/intro.png">    
-</p>
-
-See our paper: [HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in HuggingFace](http://arxiv.org/abs/2303.17580)
-
-We introduce a collaborative system that consists of **an LLM as the controller** and **numerous expert models as collaborative executors** (from HuggingFace Hub). The workflow of our system consists of four stages:
-+ **Task Planning**: Using ChatGPT to analyze the requests of users to understand their intention, and disassemble them into possible solvable tasks.
-+ **Model Selection**: To solve the planned tasks, ChatGPT selects expert models hosted on Hugging Face based on their descriptions.
-+ **Task Execution**: Invokes and executes each selected model, and return the results to ChatGPT.
-+ **Response Generation**: Finally, using ChatGPT to integrate the prediction of all models, and generate responses.
-
-<p align="center"><img src="./image/overview.jpg"></p>
-
-##  Demo
+## 0. Demo
 
 Experience JARVIS in action! Try our online demo at   [https://jarvisonsol.xyz](https://jarvisonsol.xyz)
 
-Model Download   <a href="https://huggingface.co/spaces/JarvisOnSolana/Jarvis/tree/main"><img alt="Open in Spaces" src="https://img.shields.io/badge/%F0%9F%A4%97-Open%20in%20Spaces-blue"></a>
 
-## System Requirements
+## 1. Introduction
 
-### Default (Recommended)
+In the rapidly evolving landscape of artificial intelligence, Deepseek has emerged as a true pioneer, pushing the boundaries of what's possible in natural language processing and understanding. With its groundbreaking advancements in machine learning and neural networks, Deepseek has set new standards for AI capabilities, offering unparalleled depth and nuance in language comprehension and generation.
 
-For `configs/config.default.yaml`:
+Deepseek's innovative approach combines cutting-edge algorithms with vast knowledge bases, resulting in an AI system that not only processes information but truly understands context, intent, and the subtleties of human communication. Its ability to grasp complex concepts, reason logically, and generate human-like responses has revolutionized the field of AI, opening up new possibilities for human-AI interaction.
 
-+ Ubuntu 16.04 LTS
-+ VRAM >= 24GB
-+ RAM > 12GB (minimal), 16GB (standard), 80GB (full)
-+ Disk > 284GB 
+Building upon this remarkable foundation, we are witnessing a transformation in software as revolutionary as the invention of paper - a breakthrough that didn't just innovate but fundamentally accelerated the spread of human knowledge. In the same way, modern AI, exemplified by Deepseek's achievements, is now reshaping how we build and interact with software, unlocking meaning at a scale never before possible.
 
-### Minimum (Lite)
+This revolution isn't about faster processors or cleverer algorithms. It's about understanding. For the first time, AI agents can process and generate human-like semantics at scale, transforming rigid, task-specific programs into systems that adapt to context with astonishing fluidity.
 
-For `configs/config.lite.yaml`:
+Everything we know about software is being redefined.
 
-+ Ubuntu 16.04 LTS
-+ Nothing else
+Tasks that once demanded painstakingly intricate code - interpreting natural language, analyzing images, or crafting human-like responses - can now be achieved with simple prompts and orchestration logic. The age-old struggle of bending strict logic to handle the fluidity of meaning is over. The rules no longer need to be written; they can now be described.
 
-## Quick Start
+What's truly transformative is how seamlessly these capabilities fit into today's cloud-native architectures. The modularity, scalability, and efficiency that drive microservices are perfectly aligned for deploying swarms of intelligent agents. While LLMs require specialized infrastructure, agents demand only a shift in perspective.
 
-First replace `openai.key` and `huggingface.token` in `server/configs/config.default.yaml` with **your personal OpenAI Key** and **your Hugging Face Token**, or put them in the environment variables `OPENAI_API_KEY` and `HUGGINGFACE_ACCESS_TOKEN` respectively.
+The wave has already begun, first in the cloud, but soon it will cascade to edge devices, robotics, and decentralized networks. Not as some sci-fi dream of artificial life, but as practical, context-aware tools that elevate how we work and interact with technology.
 
-### For Server:
+This is why we created JARVIS - the first personal assistant based on Deepseek.
+
+Just as paper once fueled a cultural renaissance, AI is igniting the next great leap forward. Join us, and let's shape the future together.
+
+We introduce our first-generation reasoning models, Jarvis-R1-Zero and Jarvis-R1. 
+Jarvis-R1-Zero, a model trained via large-scale reinforcement learning (RL) without supervised fine-tuning (SFT) as a preliminary step, demonstrated remarkable performance on reasoning.
+With RL, Jarvis-R1-Zero naturally emerged with numerous powerful and interesting reasoning behaviors.
+However, Jarvis-R1-Zero encounters challenges such as endless repetition, poor readability, and language mixing. To address these issues and further enhance reasoning performance,
+we introduce Jarvis-R1, which incorporates cold-start data before RL.
+Jarvis-R1 achieves performance comparable to OpenAI-o1 across math, code, and reasoning tasks. 
+To support the research community, we have open-sourced Jarvis-R1-Zero, Jarvis-R1, and six dense models distilled from Jarvis-R1 based on Llama and Qwen. Jarvis-R1-Distill-Qwen-32B outperforms OpenAI-o1-mini across various benchmarks, achieving new state-of-the-art results for dense models.
+
+
+
+<p align="center">
+  <img width="80%" src="https://github.com/JARVIS-SOL/JARVIS/blob/main/image/benchmark1.jpg?raw=true">
+</p>
+
+## 2. Model Summary
+
+---
+
+**Post-Training: Large-Scale Reinforcement Learning on the Base Model**
+
+-  We directly apply reinforcement learning (RL) to the base model without relying on supervised fine-tuning (SFT) as a preliminary step. This approach allows the model to explore chain-of-thought (CoT) for solving complex problems, resulting in the development of Jarvis-R1-Zero. Jarvis-R1-Zero demonstrates capabilities such as self-verification, reflection, and generating long CoTs, marking a significant milestone for the research community. Notably, it is the first open research to validate that reasoning capabilities of LLMs can be incentivized purely through RL, without the need for SFT. This breakthrough paves the way for future advancements in this area.
+
+-   We introduce our pipeline to develop Jarvis-R1. The pipeline incorporates two RL stages aimed at discovering improved reasoning patterns and aligning with human preferences, as well as two SFT stages that serve as the seed for the model's reasoning and non-reasoning capabilities.
+    We believe the pipeline will benefit the industry by creating better models. 
+
+---
+
+**Distillation: Smaller Models Can Be Powerful Too**
+
+-  We demonstrate that the reasoning patterns of larger models can be distilled into smaller models, resulting in better performance compared to the reasoning patterns discovered through RL on small models. The open source Jarvis-R1, as well as its API, will benefit the research community to distill better smaller models in the future. 
+- Using the reasoning data generated by Jarvis-R1, we fine-tuned several dense models that are widely used in the research community. The evaluation results demonstrate that the distilled smaller dense models perform exceptionally well on benchmarks. We open-source distilled 1.5B, 7B, 8B, 14B, 32B, and 70B checkpoints based on Qwen2.5 and Llama3 series to the community.
+
+## 3. Model Downloads
+
+### Jarvis-R1 Models
+
+<div align="center">
+
+| **Model** | **#Total Params** | **#Activated Params** | **Context Length** | **Download** |
+| :------------: | :------------: | :------------: | :------------: | :------------: |
+| Jarvis-R1-Zero | 671B | 37B | 128K   | [馃 HuggingFace](https://huggingface.co/deepseek-ai/Jarvis-R1-Zero)   |
+| Jarvis-R1   | 671B | 37B |  128K   | [馃 HuggingFace](https://huggingface.co/deepseek-ai/Jarvis-R1)   |
+
+</div>
+
+Jarvis-R1-Zero & Jarvis-R1 are trained based on DeepSeek-V3-Base. 
+For more details regarding the model architecture, please refer to [DeepSeek-V3](https://github.com/deepseek-ai/DeepSeek-V3) repository.
+
+### Jarvis-R1-Distill Models
+
+<div align="center">
+
+| **Model** | **Base Model** | **Download** |
+| :------------: | :------------: | :------------: |
+| Jarvis-R1-Distill-Qwen-1.5B  | [Qwen2.5-Math-1.5B](https://huggingface.co/Qwen/Qwen2.5-Math-1.5B) | [馃 HuggingFace](https://huggingface.co/deepseek-ai/Jarvis-R1-Distill-Qwen-1.5B)   |
+| Jarvis-R1-Distill-Qwen-7B  | [Qwen2.5-Math-7B](https://huggingface.co/Qwen/Qwen2.5-Math-7B) | [馃 HuggingFace](https://huggingface.co/deepseek-ai/Jarvis-R1-Distill-Qwen-7B)   |
+| Jarvis-R1-Distill-Llama-8B  | [Llama-3.1-8B](https://huggingface.co/meta-llama/Llama-3.1-8B) | [馃 HuggingFace](https://huggingface.co/deepseek-ai/Jarvis-R1-Distill-Llama-8B)   |
+| Jarvis-R1-Distill-Qwen-14B   | [Qwen2.5-14B](https://huggingface.co/Qwen/Qwen2.5-14B) | [馃 HuggingFace](https://huggingface.co/deepseek-ai/Jarvis-R1-Distill-Qwen-14B)   |
+|Jarvis-R1-Distill-Qwen-32B  | [Qwen2.5-32B](https://huggingface.co/Qwen/Qwen2.5-32B) | [馃 HuggingFace](https://huggingface.co/deepseek-ai/Jarvis-R1-Distill-Qwen-32B)   |
+| Jarvis-R1-Distill-Llama-70B  | [Llama-3.3-70B-Instruct](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct) | [馃 HuggingFace](https://huggingface.co/deepseek-ai/Jarvis-R1-Distill-Llama-70B)   |
+
+</div>
+
+Jarvis-R1-Distill models are fine-tuned based on open-source models, using samples generated by Jarvis-R1.
+We slightly change their configs and tokenizers. Please use our setting to run these models.
+
+## 4. Evaluation Results
+
+### Jarvis-R1-Evaluation
+ For all our models, the maximum generation length is set to 32,768 tokens. For benchmarks requiring sampling, we use a temperature of $0.6$, a top-p value of $0.95$, and generate 64 responses per query to estimate pass@1.
+<div align="center">
+
+
+| Category | Benchmark (Metric) | Claude-3.5-Sonnet-1022 | GPT-4o 0513 | DeepSeek V3 | OpenAI o1-mini | OpenAI o1-1217 | DeepSeek R1 |
+|----------|-------------------|----------------------|------------|--------------|----------------|------------|--------------|
+| | Architecture | - | - | MoE | - | - | MoE |
+| | # Activated Params | - | - | 37B | - | - | 37B |
+| | # Total Params | - | - | 671B | - | - | 671B |
+| English | MMLU (Pass@1) | 88.3 | 87.2 | 88.5 | 85.2 | **91.8** | 90.8 |
+| | MMLU-Redux (EM) | 88.9 | 88.0 | 89.1 | 86.7 | - | **92.9** |
+| | MMLU-Pro (EM) | 78.0 | 72.6 | 75.9 | 80.3 | - | **84.0** |
+| | DROP (3-shot F1) | 88.3 | 83.7 | 91.6 | 83.9 | 90.2 | **92.2** |
+| | IF-Eval (Prompt Strict) | **86.5** | 84.3 | 86.1 | 84.8 | - | 83.3 |
+| | GPQA-Diamond (Pass@1) | 65.0 | 49.9 | 59.1 | 60.0 | **75.7** | 71.5 |
+| | SimpleQA (Correct) | 28.4 | 38.2 | 24.9 | 7.0 | **47.0** | 30.1 |
+| | FRAMES (Acc.) | 72.5 | 80.5 | 73.3 | 76.9 | - | **82.5** |
+| | AlpacaEval2.0 (LC-winrate) | 52.0 | 51.1 | 70.0 | 57.8 | - | **87.6** |
+| | ArenaHard (GPT-4-1106) | 85.2 | 80.4 | 85.5 | 92.0 | - | **92.3** |
+| Code | LiveCodeBench (Pass@1-COT) | 33.8 | 34.2 | - | 53.8 | 63.4 | **65.9** |
+| | Codeforces (Percentile) | 20.3 | 23.6 | 58.7 | 93.4 | **96.6** | 96.3 |
+| | Codeforces (Rating) | 717 | 759 | 1134 | 1820 | **2061** | 2029 |
+| | SWE Verified (Resolved) | **50.8** | 38.8 | 42.0 | 41.6 | 48.9 | 49.2 |
+| | Aider-Polyglot (Acc.) | 45.3 | 16.0 | 49.6 | 32.9 | **61.7** | 53.3 |
+| Math | AIME 2024 (Pass@1) | 16.0 | 9.3 | 39.2 | 63.6 | 79.2 | **79.8** |
+| | MATH-500 (Pass@1) | 78.3 | 74.6 | 90.2 | 90.0 | 96.4 | **97.3** |
+| | CNMO 2024 (Pass@1) | 13.1 | 10.8 | 43.2 | 67.6 | - | **78.8** |
+| Chinese | CLUEWSC (EM) | 85.4 | 87.9 | 90.9 | 89.9 | - | **92.8** |
+| | C-Eval (EM) | 76.7 | 76.0 | 86.5 | 68.9 | - | **91.8** |
+| | C-SimpleQA (Correct) | 55.4 | 58.7 | **68.0** | 40.3 | - | 63.7 |
+
+</div>
+
+
+### Distilled Model Evaluation
+
+
+<div align="center">
+
+| Model                                    | AIME 2024 pass@1 | AIME 2024 cons@64 | MATH-500 pass@1 | GPQA Diamond pass@1 | LiveCodeBench pass@1 | CodeForces rating |
+|------------------------------------------|------------------|-------------------|-----------------|----------------------|----------------------|-------------------|
+| GPT-4o-0513                          | 9.3              | 13.4              | 74.6            | 49.9                 | 32.9                 | 759               |
+| Claude-3.5-Sonnet-1022             | 16.0             | 26.7                 | 78.3            | 65.0                 | 38.9                 | 717               |
+| o1-mini                              | 63.6             | 80.0              | 90.0            | 60.0                 | 53.8                 | **1820**          |
+| QwQ-32B-Preview                              | 44.0             | 60.0                 | 90.6            | 54.5               | 41.9                 | 1316              |
+| Jarvis-R1-Distill-Qwen-1.5B       | 28.9             | 52.7              | 83.9            | 33.8                 | 16.9                 | 954               |
+| Jarvis-R1-Distill-Qwen-7B          | 55.5             | 83.3              | 92.8            | 49.1                 | 37.6                 | 1189              |
+| Jarvis-R1-Distill-Qwen-14B         | 69.7             | 80.0              | 93.9            | 59.1                 | 53.1                 | 1481              |
+| Jarvis-R1-Distill-Qwen-32B        | **72.6**         | 83.3              | 94.3            | 62.1                 | 57.2                 | 1691              |
+| Jarvis-R1-Distill-Llama-8B         | 50.4             | 80.0              | 89.1            | 49.0                 | 39.6                 | 1205              |
+| Jarvis-R1-Distill-Llama-70B        | 70.0             | **86.7**          | **94.5**        | **65.2**             | **57.5**             | 1633              |
+
+</div>
+
+
+## 5. Chat Website & API Platform
+You can chat with Jarvis-R1 on DeepSeek's official website: [chat.deepseek.com](https://chat.deepseek.com), and switch on the button "DeepThink"
+
+We also provide OpenAI-Compatible API at DeepSeek Platform: [platform.deepseek.com](https://platform.deepseek.com/)
+
+## 6. How to Run Locally
+
+### Jarvis-R1 Models
+
+Please visit [DeepSeek-V3](https://github.com/deepseek-ai/DeepSeek-V3) repo for more information about running Jarvis-R1 locally.
+
+**NOTE: Hugging Face's Transformers has not been directly supported yet.**
+
+### Jarvis-R1-Distill Models
+
+Jarvis-R1-Distill models can be utilized in the same manner as Qwen or Llama models.
+
+For instance, you can easily start a service using [vLLM](https://github.com/vllm-project/vllm):
+
+```shell
+vllm serve deepseek-ai/Jarvis-R1-Distill-Qwen-32B --tensor-parallel-size 2 --max-model-len 32768 --enforce-eager
+```
+
+You can also easily start a service using [SGLang](https://github.com/sgl-project/sglang)
 
 ```bash
-# setup env
-cd server
-conda create -n jarvis python=3.8
-conda activate jarvis
-conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
-pip install -r requirements.txt
-
-# download models
-cd models
-bash download.sh
-
-# run server
-cd ..
-python models_server.py --config configs/config.default.yaml
-python awesome_chat.py --config configs/config.default.yaml --mode server
-
-Here's the new README.md file for JARVIS, combining content from both files and incorporating the requested changes:
-
-
-### For Web:
-
-After starting `awesome_chat.py` in a server mode, you can run the commands to communicate with Jarvis in your browser:
-
-```shellscript
-cd web
-npm install
-npm run dev
+python3 -m sglang.launch_server --model deepseek-ai/Jarvis-R1-Distill-Qwen-32B --trust-remote-code --tp 2
 ```
 
-### For CLI:
+### Usage Recommendations
 
-You can also run Jarvis more easily in CLI mode:
+**We recommend adhering to the following configurations when utilizing the Jarvis-R1 series models, including benchmarking, to achieve the expected performance:**
 
-```shellscript
-cd server
-python awesome_chat.py --config configs/config.default.yaml --mode cli
+1. Set the temperature within the range of 0.5-0.7 (0.6 is recommended) to prevent endless repetitions or incoherent outputs.
+2. **Avoid adding a system prompt; all instructions should be contained within the user prompt.**
+3. For mathematical problems, it is advisable to include a directive in your prompt such as: "Please reason step by step, and put your final answer within \boxed{}."
+4. When evaluating model performance, it is recommended to conduct multiple tests and average the results.
+
+Additionally, we have observed that the Jarvis-R1 series models tend to bypass thinking pattern (i.e., outputting "\<think\>\n\n\</think\>") when responding to certain queries, which can adversely affect the model's performance.
+**To ensure that the model engages in thorough reasoning, we recommend enforcing the model to initiate its response with "\<think\>\n" at the beginning of every output.**
+
+## 7. License
+This code repository and the model weights are licensed under the [MIT License](https://github.com/deepseek-ai/Jarvis-R1/blob/main/LICENSE).
+Jarvis-R1 series support commercial use, allow for any modifications and derivative works, including, but not limited to, distillation for training other LLMs. Please note that:
+- Jarvis-R1-Distill-Qwen-1.5B, Jarvis-R1-Distill-Qwen-7B, Jarvis-R1-Distill-Qwen-14B and Jarvis-R1-Distill-Qwen-32B are derived from [Qwen-2.5 series](https://github.com/QwenLM/Qwen2.5), which are originally licensed under [Apache 2.0 License](https://huggingface.co/Qwen/Qwen2.5-1.5B/blob/main/LICENSE), and now finetuned with 800k samples curated with Jarvis-R1.
+- Jarvis-R1-Distill-Llama-8B is derived from Llama3.1-8B-Base and is originally licensed under [llama3.1 license](https://huggingface.co/meta-llama/Llama-3.1-8B/blob/main/LICENSE).
+- Jarvis-R1-Distill-Llama-70B is derived from Llama3.3-70B-Instruct and is originally licensed under [llama3.3 license](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/blob/main/LICENSE).
+
+## 8. Citation
 ```
-
-## Configuration
-
-The server-side configuration file is `server/configs/config.default.yaml`. Some key parameters include:
-
-- `model`: LLM, currently supports `text-davinci-003`
-- `inference_mode`: mode of inference endpoints (`local`, `huggingface`, or `hybrid`)
-- `local_deployment`: scale of locally deployed models (`minimal`, `standard`, or `full`)
-
-
-##  Performance Metrics
-
-JARVIS has been rigorously tested and benchmarked against leading AI models. Here are some key performance metrics:
-
-| Capability | JARVIS | GPT-4 | Claude-3.5 | Qwen2.5 | LLaMA3.1
-|-----|-----|-----|-----|-----|-----
-| Language Understanding (GLUE score) | 88.4 | 91.8 | 90.5 | 89.7 | 88.9
-| Logical Reasoning (LogiQA accuracy) | 84.3% | 85.7% | 84.2% | 82.9% | 81.5%
-| Mathematical Problem Solving (MATH dataset) | 62.8% | 66.9% | 64.5% | 62.1% | 60.8%
-| Code Generation (HumanEval pass@1) | 68.2% | 72.5% | 70.1% | 68.7% | 67.3%
-| Code Explanation (CodexGLUE accuracy) | 81.5% | 80.9% | 79.3% | 77.8% | 76.4%
-| Common Sense Reasoning (CommonsenseQA accuracy) | 78.6% | 78.9% | 77.2% | 75.8% | 74.5%
-| Creative Writing (Human evaluation score /10) | 8.4 | 8.6 | 8.3 | 8.0 | 7.8
-| Multilingual Support (Number of languages) | 96 | 95 | 92 | 88 | 85
-| Task Completion Rate (%) | 96.1% | 95.8% | 94.2% | 92.7% | 91.5%
-| Factual Accuracy (%) | 96.4% | 97.9% | 96.8% | 95.4% | 94.7%
-| Response Time (seconds) | 1.1 | 1.2 | 1.0 | 1.3 | 1.5
-| Context Window (tokens) | 128K | 128K | 100K | 64K | 32K
-
-
-##  Roadmap
-
-- Public release of the JARVIS model
-- API integration for developers
-- Mobile app for on-the-go AI assistance
-- Specialized versions for different industries (e.g., healthcare, finance)
-- Continuous learning and improvement based on user feedback
-
-
-##  Contributing
-
-We welcome contributions from the community! If you'd like to contribute to JARVIS, please follow these steps:
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
-##  License
-
-JARVIS is released under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Citation
-
-If you find this work useful in your method, you can cite the paper as below:
-
-@inproceedings{shen2023hugginggpt,
-  author = {Shen, Yongliang and Song, Kaitao and Tan, Xu and Li, Dongsheng and Lu, Weiming and Zhuang, Yueting},
-  booktitle = {Advances in Neural Information Processing Systems},
-  title = {HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in HuggingFace},
-  year = {2023}
+@misc{deepseekai2025deepseekr1incentivizingreasoningcapability,
+      title={Jarvis-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning}, 
+      author={DeepSeek-AI and Daya Guo and Dejian Yang and Haowei Zhang and Junxiao Song and Ruoyu Zhang and Runxin Xu and Qihao Zhu and Shirong Ma and Peiyi Wang and Xiao Bi and Xiaokang Zhang and Xingkai Yu and Yu Wu and Z. F. Wu and Zhibin Gou and Zhihong Shao and Zhuoshu Li and Ziyi Gao and Aixin Liu and Bing Xue and Bingxuan Wang and Bochao Wu and Bei Feng and Chengda Lu and Chenggang Zhao and Chengqi Deng and Chenyu Zhang and Chong Ruan and Damai Dai and Deli Chen and Dongjie Ji and Erhang Li and Fangyun Lin and Fucong Dai and Fuli Luo and Guangbo Hao and Guanting Chen and Guowei Li and H. Zhang and Han Bao and Hanwei Xu and Haocheng Wang and Honghui Ding and Huajian Xin and Huazuo Gao and Hui Qu and Hui Li and Jianzhong Guo and Jiashi Li and Jiawei Wang and Jingchang Chen and Jingyang Yuan and Junjie Qiu and Junlong Li and J. L. Cai and Jiaqi Ni and Jian Liang and Jin Chen and Kai Dong and Kai Hu and Kaige Gao and Kang Guan and Kexin Huang and Kuai Yu and Lean Wang and Lecong Zhang and Liang Zhao and Litong Wang and Liyue Zhang and Lei Xu and Leyi Xia and Mingchuan Zhang and Minghua Zhang and Minghui Tang and Meng Li and Miaojun Wang and Mingming Li and Ning Tian and Panpan Huang and Peng Zhang and Qiancheng Wang and Qinyu Chen and Qiushi Du and Ruiqi Ge and Ruisong Zhang and Ruizhe Pan and Runji Wang and R. J. Chen and R. L. Jin and Ruyi Chen and Shanghao Lu and Shangyan Zhou and Shanhuang Chen and Shengfeng Ye and Shiyu Wang and Shuiping Yu and Shunfeng Zhou and Shuting Pan and S. S. Li and Shuang Zhou and Shaoqing Wu and Shengfeng Ye and Tao Yun and Tian Pei and Tianyu Sun and T. Wang and Wangding Zeng and Wanjia Zhao and Wen Liu and Wenfeng Liang and Wenjun Gao and Wenqin Yu and Wentao Zhang and W. L. Xiao and Wei An and Xiaodong Liu and Xiaohan Wang and Xiaokang Chen and Xiaotao Nie and Xin Cheng and Xin Liu and Xin Xie and Xingchao Liu and Xinyu Yang and Xinyuan Li and Xuecheng Su and Xuheng Lin and X. Q. Li and Xiangyue Jin and Xiaojin Shen and Xiaosha Chen and Xiaowen Sun and Xiaoxiang Wang and Xinnan Song and Xinyi Zhou and Xianzu Wang and Xinxia Shan and Y. K. Li and Y. Q. Wang and Y. X. Wei and Yang Zhang and Yanhong Xu and Yao Li and Yao Zhao and Yaofeng Sun and Yaohui Wang and Yi Yu and Yichao Zhang and Yifan Shi and Yiliang Xiong and Ying He and Yishi Piao and Yisong Wang and Yixuan Tan and Yiyang Ma and Yiyuan Liu and Yongqiang Guo and Yuan Ou and Yuduan Wang and Yue Gong and Yuheng Zou and Yujia He and Yunfan Xiong and Yuxiang Luo and Yuxiang You and Yuxuan Liu and Yuyang Zhou and Y. X. Zhu and Yanhong Xu and Yanping Huang and Yaohui Li and Yi Zheng and Yuchen Zhu and Yunxian Ma and Ying Tang and Yukun Zha and Yuting Yan and Z. Z. Ren and Zehui Ren and Zhangli Sha and Zhe Fu and Zhean Xu and Zhenda Xie and Zhengyan Zhang and Zhewen Hao and Zhicheng Ma and Zhigang Yan and Zhiyu Wu and Zihui Gu and Zijia Zhu and Zijun Liu and Zilin Li and Ziwei Xie and Ziyang Song and Zizheng Pan and Zhen Huang and Zhipeng Xu and Zhongyu Zhang and Zhen Zhang},
+      year={2025},
+      eprint={2501.12948},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2501.12948}, 
 }
 
-@article{shen2023taskbench,
-  title   = {TaskBench: Benchmarking Large Language Models for Task Automation},
-  author  = {Shen, Yongliang and Song, Kaitao and Tan, Xu and Zhang, Wenqi and Ren, Kan and Yuan, Siyu and Lu, Weiming and Li, Dongsheng and Zhuang, Yueting},
-  journal = {arXiv preprint arXiv:2311.18760},
-  year    = {2023}
-}
-
-@article{yuan2024easytool,
-  title   = {EASYTOOL: Enhancing LLM-based Agents with Concise Tool Instruction},
-  author  = {Siyu Yuan and Kaitao Song and Jiangjie Chen and Xu Tan and Yongliang Shen and Ren Kan and Dongsheng Li and Deqing Yang},
-  journal = {arXiv preprint arXiv:2401.06201},
-  year    = {2024}
-}
-
-Made with  by the JARVIS Team
+```
 
