@@ -11,7 +11,7 @@
   <a href="https://jarvisonsol.xyz/" target="_blank" style="margin: 2px;">
     <img alt="Homepage" src="https://github.com/JARVIS-SOL/JARVIS/blob/main/image/badge.svg?raw=true" width="20%" style="display: inline-block; vertical-align: middle;"/>
   </a>
-  <a href="https://jarvisonsol.xyz/" target="_blank" style="margin: 2px;">
+  <a href="https://x.com/jarvis_onsolana" target="_blank" style="margin: 2px;">
     <img alt="Homepage" src="https://github.com/JARVIS-SOL/JARVIS/blob/main/image/twitter.svg?raw=true" width="20%" style="display: inline-block; vertical-align: middle;"/>
   </a>
   
