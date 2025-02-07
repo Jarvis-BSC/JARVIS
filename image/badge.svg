@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 151 20" style="enable-background:new 0 0 151 20;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_00000176032267138653795450000013858683474753517446_);}
+	.st1{fill:#555555;}
+	.st2{fill:#F9108B;}
+	.st3{fill:url(#SVGID_00000072253614737561173150000010714869112095161735_);}
+	.st4{enable-background:new    ;}
+	.st5{fill:#010101;}
+	.st6{font-family:'Verdana';}
+	.st7{font-size:11px;}
+	.st8{fill:#FFFFFF;}
+</style>
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M3,0h145c1.7,0,3,1.3,3,3v14c0,1.7-1.3,3-3,3H3c-1.7,0-3-1.3-3-3V3C0,1.3,1.3,0,3,0z"/>
+	</defs>
+	<clipPath id="SVGID_00000097488823054654968700000016062072259309331376_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g style="clip-path:url(#SVGID_00000097488823054654968700000016062072259309331376_);">
+		<rect class="st1" width="82" height="20"/>
+		<rect x="82" class="st2" width="69" height="20"/>
+		
+			<linearGradient id="SVGID_00000152225071691951717010000012101942296344496525_" gradientUnits="userSpaceOnUse" x1="-432.6126" y1="497.95" x2="-432.6126" y2="496.95" gradientTransform="matrix(151 0 0 -20 65400 9959)">
+			<stop  offset="0" style="stop-color:#BBBBBB;stop-opacity:0.1"/>
+			<stop  offset="1" style="stop-color:#000000;stop-opacity:0.1"/>
+		</linearGradient>
+		<rect style="fill:url(#SVGID_00000152225071691951717010000012101942296344496525_);" width="151" height="20"/>
+	</g>
+</g>
+<g text-rendering="geometricPrecision">
+	<g class="st4">
+		<text transform="matrix(1 0 0 1 31.3079 15)" class="st5 st6 st7">Jarvis</text>
+	</g>
+	<text transform="matrix(1 0 0 1 31.3079 14)" class="st8 st6 st7">Jarvis</text>
+	<g class="st4">
+		<text transform="matrix(1 0 0 1 85.9697 15)" class="st5 st6 st7">Homepage</text>
+	</g>
+	<text transform="matrix(1 0 0 1 85.9697 14)" class="st8 st6 st7">Homepage</text>
+</g>
+<path class="st5" d="M13.1,5.1c-0.9,0-1.6,0.7-1.6,1.6s0.7,1.6,1.6,1.6s1.6-0.7,1.6-1.6S13.9,5.1,13.1,5.1z M17.2,16.2
+	c-1.5,0-3-0.6-4-1.7s-1.7-2.5-1.7-4h2.8c0,1.6,1.3,3,3,3s3-1.3,3-3V8h-3.4V5.2h6.1v5.3c0,1.5-0.6,3-1.7,4S18.7,16.2,17.2,16.2z"/>
+<path class="st8" d="M13.1,3.9c-0.9,0-1.6,0.7-1.6,1.6S12.2,7,13.1,7s1.6-0.7,1.6-1.6S13.9,3.9,13.1,3.9z M17.2,15
+	c-1.5,0-3-0.6-4-1.7s-1.7-2.5-1.7-4h2.8c0,1.6,1.3,3,3,3s3-1.3,3-3V6.8h-3.4V4h6.1v5.3c0,1.5-0.6,3-1.7,4S18.7,15,17.2,15z"/>
+</svg>
