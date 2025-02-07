@@ -90,8 +90,8 @@ To support the research community, we have open-sourced Jarvis-R1-Zero, Jarvis-R
 
 | **Model** | **#Total Params** | **#Activated Params** | **Context Length** | **Download** |
 | :------------: | :------------: | :------------: | :------------: | :------------: |
-| Jarvis-R1-Zero | 671B | 37B | 128K   | [馃 HuggingFace](https://huggingface.co/deepseek-ai/Jarvis-R1-Zero)   |
-| Jarvis-R1   | 671B | 37B |  128K   | [馃 HuggingFace](https://huggingface.co/deepseek-ai/Jarvis-R1)   |
+| Jarvis-R1-Zero | 671B | 37B | 128K   | [HuggingFace](https://huggingface.co/deepseek-ai/Jarvis-R1-Zero)   |
+| Jarvis-R1   | 671B | 37B |  128K   | [HuggingFace](https://huggingface.co/deepseek-ai/Jarvis-R1)   |
 
 </div>
 
@@ -104,12 +104,12 @@ For more details regarding the model architecture, please refer to [DeepSeek-V3]
 
 | **Model** | **Base Model** | **Download** |
 | :------------: | :------------: | :------------: |
-| Jarvis-R1-Distill-Qwen-1.5B  | [Qwen2.5-Math-1.5B](https://huggingface.co/Qwen/Qwen2.5-Math-1.5B) | [馃 HuggingFace](https://huggingface.co/deepseek-ai/Jarvis-R1-Distill-Qwen-1.5B)   |
-| Jarvis-R1-Distill-Qwen-7B  | [Qwen2.5-Math-7B](https://huggingface.co/Qwen/Qwen2.5-Math-7B) | [馃 HuggingFace](https://huggingface.co/deepseek-ai/Jarvis-R1-Distill-Qwen-7B)   |
-| Jarvis-R1-Distill-Llama-8B  | [Llama-3.1-8B](https://huggingface.co/meta-llama/Llama-3.1-8B) | [馃 HuggingFace](https://huggingface.co/deepseek-ai/Jarvis-R1-Distill-Llama-8B)   |
-| Jarvis-R1-Distill-Qwen-14B   | [Qwen2.5-14B](https://huggingface.co/Qwen/Qwen2.5-14B) | [馃 HuggingFace](https://huggingface.co/deepseek-ai/Jarvis-R1-Distill-Qwen-14B)   |
-|Jarvis-R1-Distill-Qwen-32B  | [Qwen2.5-32B](https://huggingface.co/Qwen/Qwen2.5-32B) | [馃 HuggingFace](https://huggingface.co/deepseek-ai/Jarvis-R1-Distill-Qwen-32B)   |
-| Jarvis-R1-Distill-Llama-70B  | [Llama-3.3-70B-Instruct](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct) | [馃 HuggingFace](https://huggingface.co/deepseek-ai/Jarvis-R1-Distill-Llama-70B)   |
+| Jarvis-R1-Distill-Qwen-1.5B  | [Qwen2.5-Math-1.5B](https://huggingface.co/Qwen/Qwen2.5-Math-1.5B) | [HuggingFace](https://huggingface.co/deepseek-ai/Jarvis-R1-Distill-Qwen-1.5B)   |
+| Jarvis-R1-Distill-Qwen-7B  | [Qwen2.5-Math-7B](https://huggingface.co/Qwen/Qwen2.5-Math-7B) | [HuggingFace](https://huggingface.co/deepseek-ai/Jarvis-R1-Distill-Qwen-7B)   |
+| Jarvis-R1-Distill-Llama-8B  | [Llama-3.1-8B](https://huggingface.co/meta-llama/Llama-3.1-8B) | [HuggingFace](https://huggingface.co/deepseek-ai/Jarvis-R1-Distill-Llama-8B)   |
+| Jarvis-R1-Distill-Qwen-14B   | [Qwen2.5-14B](https://huggingface.co/Qwen/Qwen2.5-14B) | [HuggingFace](https://huggingface.co/deepseek-ai/Jarvis-R1-Distill-Qwen-14B)   |
+|Jarvis-R1-Distill-Qwen-32B  | [Qwen2.5-32B](https://huggingface.co/Qwen/Qwen2.5-32B) | [HuggingFace](https://huggingface.co/deepseek-ai/Jarvis-R1-Distill-Qwen-32B)   |
+| Jarvis-R1-Distill-Llama-70B  | [Llama-3.3-70B-Instruct](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct) | [HuggingFace](https://huggingface.co/deepseek-ai/Jarvis-R1-Distill-Llama-70B)   |
 
 </div>
 
