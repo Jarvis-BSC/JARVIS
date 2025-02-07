@@ -1,4 +1,4 @@
-# Jarvis-R1
+# Jarvis-R1 (Your first private assistant on Deepseek)
 <!-- markdownlint-disable first-line-h1 -->
 <!-- markdownlint-disable html -->
 <!-- markdownlint-disable no-duplicate-header -->
