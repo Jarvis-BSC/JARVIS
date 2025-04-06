@@ -8,11 +8,11 @@
 </div>
 <hr>
 <div align="center" style="line-height: 1;">
-  <a href="https://jarvisonsol.xyz/" target="_blank" style="margin: 2px;">
-    <img alt="Homepage" src="https://github.com/JARVIS-SOL/JARVIS/blob/main/image/badge.svg?raw=true" width="20%" style="display: inline-block; vertical-align: middle;"/>
+  <a href="https://jarvisbsc.xyz/" target="_blank" style="margin: 2px;">
+    <img alt="Homepage" src="https://github.com/Jarvis-BSC/JARVIS/blob/main/image/badge.svg?raw=true" width="20%" style="display: inline-block; vertical-align: middle;"/>
   </a>
-  <a href="https://x.com/jarvis_onsolana" target="_blank" style="margin: 2px;">
-    <img alt="Homepage" src="https://github.com/JARVIS-SOL/JARVIS/blob/main/image/twitter.svg?raw=true" width="20%" style="display: inline-block; vertical-align: middle;"/>
+  <a href="https://x.com/jarvis_bnbchain" target="_blank" style="margin: 2px;">
+    <img alt="Homepage" src="https://github.com/Jarvis-BSC/JARVIS/blob/main/image/twitter.svg?raw=true" width="20%" style="display: inline-block; vertical-align: middle;"/>
   </a>
   
   
@@ -25,7 +25,7 @@
 
 ## 0. Demo
 
-Experience JARVIS in action! Try our online demo at   [https://jarvisonsol.xyz](https://jarvisonsol.xyz)
+Experience JARVIS in action! Try our online demo at   [https://jarvisbsc.xyz](https://jarvisbsc.xyz)
 
 
 ## 1. Introduction
