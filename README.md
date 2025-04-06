@@ -105,5 +105,5 @@ Q1 2025:
 - Integrate real-time alert system
 
 <p align="center">
-  <img width="80%" src="https://example.com/performance_metrics.png">
+  <img width="80%" src="https://github.com/Jarvis-BSC/JARVIS/jarvis_logo.png">
 </p>
