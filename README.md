@@ -4,7 +4,7 @@
 <!-- markdownlint-disable no-duplicate-header -->
 
 <div align="center">
-  <img src="https://github.com/JARVIS-SOL/JARVIS/blob/main/image/jarvis_banner.png?raw=true" width="100%" alt="AI-Token-Research-Engine" />
+  <img src="https://github.com/Jarvis-BSC/JARVIS/blob/main/image/jarvis_banner.png?raw=true" width="100%" alt="AI-Token-Research-Engine" />
 </div>
 <hr>
 <div align="center" style="line-height: 1;">
@@ -105,5 +105,5 @@ Q1 2025:
 - Integrate real-time alert system
 
 <p align="center">
-  <img width="80%" src="https://github.com/Jarvis-BSC/JARVIS/jarvis_logo.png">
+  <img src="https://github.com/Jarvis-BSC/JARVIS/blob/main/image/jarvis_logo.png?raw=true" width="80%" alt="Jarvis-logo" />
 </p>
