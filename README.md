@@ -20,6 +20,8 @@
 
 Experience our AI Token Research Engine: [https://jarvisbsc.xyz](https://jarvisbsc.xyz)
 
+The JARVIS token is now live: ## CA[Click to jump](https://jarvisbsc.xyz)
+
 ## 1. Introduction
 
 In the rapidly evolving landscape of blockchain and cryptocurrency investments, the need for intelligent, automated research tools has never been greater. Our AI Token Investment Research Engine represents a breakthrough in decentralized finance analytics, combining cutting-edge artificial intelligence with comprehensive blockchain data analysis.
