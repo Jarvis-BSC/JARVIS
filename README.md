@@ -21,7 +21,7 @@
 Experience our AI Token Research Engine: [https://jarvisbsc.xyz](https://jarvisbsc.xyz)
 
 The JARVIS token is now live:
-CA: 0x1267ffee47210e5020342ad20f80af05836c4444[Click to jump]([https://jarvisbsc.xyz](https://four.meme/token/0x1267ffee47210e5020342ad20f80af05836c4444))
+CA: 0x1267ffee47210e5020342ad20f80af05836c4444[Click to jump](https://four.meme/token/0x1267ffee47210e5020342ad20f80af05836c4444)
 
 ## 1. Introduction
 
