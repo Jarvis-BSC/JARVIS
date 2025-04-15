@@ -20,7 +20,6 @@
 
 Experience our AI Token Research Engine: [https://jarvisbsc.xyz](https://jarvisbsc.xyz)
 
-The JARVIS token is now live: ## CA[Click to jump](https://jarvisbsc.xyz)
 
 ## 1. Introduction
 
